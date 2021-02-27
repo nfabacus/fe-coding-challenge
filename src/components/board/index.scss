@@ -1,0 +1,38 @@
+.Board {
+  margin: auto;
+  color: #ffffffad;
+  font-family: 'Ubuntu', sans-serif;
+  #bgVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  background-image: linear-gradient(to right top, #051937, #044268, #007199, #00a3c6, #12d8eb);
+  .BoardInner {
+    z-index: 1;
+    background: rgba( 255, 255, 255, 0.48 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    .boardText {
+      color: transparent;
+      background-image: linear-gradient(90deg,#644c8e,#c31a70 100%);
+      background-size: cover;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    }
+    .Cell {
+      cursor: pointer;
+      width: 4rem;
+      height: 4rem;
+      transition: color 1s;
+      &:hover {
+        color: red;
+      }
+    }
+  }
+}

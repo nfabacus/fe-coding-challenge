@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
-import './index.css'
+import './index.scss'
 import { Board } from './components/board'
 import configureStore from './store'
 import { Provider } from 'react-redux'
+import 'bootstrap/dist/css/bootstrap.css'
 
 const store = configureStore()
 

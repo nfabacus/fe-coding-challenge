@@ -1,5 +1,5 @@
 import { createBoard, board, game } from "."
-import * as Actions from '../actions/moves'
+import * as Actions from '../actions'
 
 describe('createBoard', () => {
   it('should regenerate a square 2D array of provided length', () => {
