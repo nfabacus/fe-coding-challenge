@@ -1,4 +1,5 @@
 # Syft Tic-Tac-Toe
+Deployed to https://fe-coding-challenge.vercel.app/
 
 ## Tasks
 
