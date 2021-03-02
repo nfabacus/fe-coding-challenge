@@ -12,9 +12,9 @@ const GameStatus = ({ currentPlayer, winner, isDraw, isGameOver, handlePlayAgain
       }
       {
         !isGameOver ? (
-          <div className="boardText">
-            <h2>Player X vs Player O</h2>
-            <p className="text-center">Player {currentPlayer}'s Turn</p>
+          <div>
+            <h2 className="boardText">Player X vs Player O</h2>
+            <p className="boardText text-center">Player {currentPlayer}'s Turn</p>
           </div>
         ) : (
           <div className="text-center p-3">
