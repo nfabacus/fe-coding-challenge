@@ -12,7 +12,7 @@ export const createBoard = (i) =>
 export const board = (state = createBoard(3), action) => {
   switch (action.type) {
     case SELECT_CELL: {
-      const newBoard = [ ...state ]
+      const newBoard = JSON.parse(JSON.stringify(state))
       newBoard[action.row][action.col] = action.currentPlayer
       return newBoard
     }
